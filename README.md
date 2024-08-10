@@ -17,8 +17,8 @@ Siga estes passos para configurar o projeto em sua máquina local:
 
 1. Clone o repositório
    ```
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/pdroavila/frameworks_back_ii.git
+   cd frameworks_back_ii
    ```
 
 2. Instale as dependências do PHP
