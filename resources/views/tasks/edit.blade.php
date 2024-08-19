@@ -9,20 +9,23 @@
             @method('PUT')
 
             <div class="form-group">
-                <input type="text" name="title" id="title" class="form-input @error('title') is-invalid @enderror" value="{{ old('title', $task->title) }}" required placeholder="Título da tarefa">
+                Título tarefa:
+                <input type="text" name="title" id="title" class="form-input @error('title') is-invalid @enderror" value="{{ old('title', $task->title) }}" required >
                 @error('title')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
 
             <div class="form-group">
-                <textarea name="description" id="description" class="form-input @error('description') is-invalid @enderror" rows="4" placeholder="Descrição da tarefa">{{ old('description', $task->description) }}</textarea>
+                Descrição:
+                <textarea name="description" id="description" class="form-input @error('description') is-invalid @enderror" rows="4" >{{ old('description', $task->description) }}</textarea>
                 @error('description')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
 
             <div class="form-group">
+                Prazo tarefa:
                 <input type="date" name="due_date" id="due_date" class="form-input @error('due_date') is-invalid @enderror" value="{{ old('due_date', $task->due_date ? $task->due_date->format('Y-m-d') : '') }}">
                 @error('due_date')
                     <div class="invalid-feedback">{{ $message }}</div>
